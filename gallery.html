@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <title>SDN 2 Sukatani || Home</title>
+</head>
+<body>
+ 
+       <header>
+           <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+                 <a class=" navbar-brand brand" href="index.html">
+                    <div class="nama-brand">
+                        <img class="img-fluid" src="assets/img/logo1.png" alt=""  width="80">
+                        <b>SD NEGERI 2 SUKATANI</b></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse  daftar" id="navbarNav">
+                      <ul class="navbar-nav ms-auto mb-2 mb-lg-2">
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Profile
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item active" href="profil-sekolah.html">Profil Sekolah</a></li>
+                            <li><a class="dropdown-item" href="guru.html">Daftar Guru</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="gallery.html">Gallery Foto</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Akademik</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="modul.html">Modul</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="kontak.html">Kontak</a>
+                        </li>
+                    </div>
+                  </div>
+                </nav>
+            </div>
+          </div>
+        </nav>
+       </header>
+      
+       <!--Gallery box-->
+      <!-- Images used to open the lightbox -->
+<div class="row lgbox">
+  <div class="column lgbox_konten">
+    <img src="assets/img/lg1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column lgbox_konten">
+    <img src="assets/img/lg2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column lgbox_konten">
+    <img src="assets/img/lg3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column lgbox_konten">
+    <img src="assets/img/lg4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>8
+  <div class="column lgbox_konten">
+    <img src="assets/img/lg5.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column lgbox_konten">
+    <img src="assets/img/lg6.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column lgbox_konten">
+    <img src="assets/img/lg7.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column lgbox_konten">
+    <img src="assets/img/lg8.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column lgbox_konten">
+    <img src="assets/img/lg9.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column lgbox_konten">
+    <img src="assets/img/lg20.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img1_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img2_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img3_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img4_wide.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column lgbox_konten">
+      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column lgbox_konten">
+      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column lgbox_konten">
+      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column lgbox_konten">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div>
+
+      <script src="assets/style/js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="assets/style/js/gallery.js"></script>
+    </body>
+    </html>
